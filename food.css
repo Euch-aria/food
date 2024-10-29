@@ -1,0 +1,79 @@
+body{
+    font-family: "Playfair Display", serif;
+}
+.badblood h6{
+    text-align: center;
+}
+
+.attention{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+}
+
+.attention img{
+    width: 300px;
+}
+
+.deathbed p{
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: larger;
+    text-align: center;
+}
+
+#heatwaves{
+    font-size: small;
+    margin-top: 10px;
+}
+
+#wonderland{
+    text-align: center;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.d-block{
+    width: 700px;
+    justify-self:center;
+}
+
+#iam{
+    font-weight: 900;
+    font-size: larger;
+}
+
+#getaway{
+    text-align: center;
+}
+
+.thumbs{
+    text-align: center;
+    font-size: small;
+}
+
+h5{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#pen{
+    text-align: center;
+}
+
+span{
+    color: brown;
+}
+
+@media(max-width:800px){
+    .attention{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0;
+        overflow: hidden;
+    }
+    .attention img{
+        width: 300px;
+    }
+}
