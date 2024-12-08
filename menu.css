@@ -1,3 +1,4 @@
+
 *{
     margin: 0%;
     padding: 0%;
@@ -114,22 +115,6 @@ header {
   color: black;
 }
 
-.btn {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 8px;
-  color: #333;
-  font-weight: 600;
-  font-size: 20px;
-  margin-top: 10px;
-  transition: all 0.4s ease;
-}
-
-/* .btn:hover {
-  background: #333;
-  color: #fff;
-} */
-
 #closeIcon {
   position: absolute;
   top: 25px;
@@ -157,12 +142,11 @@ header {
   margin-right: 5.5%;
   margin-top: 30px;
 }
-#order-pickup-text{
-  margin-top: 50PX;
-  color: black;
-  font-weight: 900;
-  font-size: 45px;
-}
+
+.heading-text h1{
+    font-size: 100px;
+  }
+
 #get-white-hot-text{
   margin-top: 80px;
   width: 350px;
@@ -171,119 +155,59 @@ header {
   color: red;
   font-weight: bold;
   font-size: 25px;
+ 
 }
-.see-menu-link{
-  color: white;
-  text-decoration: none;
-}
-.see-menu-link:hover{
-  color: red;
-}
-
-.see-menu{
-  background: black;
-  width: 150px;
-  border: transparent;
-  border-radius: 5px;
-}
-.see-menu:hover{
-  background: white;
-}
-.btn-see-menu{
-  margin-bottom: 20px;
-  margin-top: 100px;
-  justify-self: center;
-}
-.recepie-original-text{
-  text-align: center;
-  margin-top: 20PX;
-}
-.contain-main-body-text{
-  margin-left: 5.5%;
-  margin-right: 5.5%;
-  margin-top: 30px;
-}
-.contain-time-favourites{
-  margin-top: 50px;
-  box-sizing: border-box;
-  border: 1px solid;
-  background: white;
-}
-#time-favorite-text{
-  text-align: center;
-  color: black;
-  font-size: 30px;
-}
-.favorite-flex{
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-}
-.chicago-deep{
-  margin-left: 20px;
-  width: 300px;
-}
-.chicago-deep-text{
-color: black;
-}
-
-.special-flex-contain{
-  display: grid;
-  grid-template-columns: 1fr;
-  margin-top: 50px;
-}
-
-.special-contain-body{
-  box-sizing: border-box;
-  border: 1px solid;
-  background: white;
-  color: black;
-  width: 350px;
-}
-
-.special-contain-text{
-  margin-top: 20PX;
-  text-align: center;
-  margin-bottom: 20px;
-}
-#guilty{
-  text-align: center;
-}
-.special-contain-img{
-  width: 100%;
-  margin-top: 10px;
-}
-.about-our-chef{
-  margin-top: 30PX;
-}
-#p-our-chef{
- color: red;
- font-size: 30px;
- text-align: center;
-}
-.flex-chef{
-display:grid;
+.menu-contain-flex{
+display: grid;
 grid-template-columns: 1fr;
+margin-left: 3.5%;
+margin-right: 3.5%;
+margin-top: 30px;
+}
+.menu-container{
+    border: 1px solid white;
+    width: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.menu-container h1{
+    text-align: center;
+}
+.pizza-flex{
+    display: flex;
+    justify-content: space-between;
 }
 
+.pizza-flex h4{
+    color: red;
+}
 
-/* ===menu begins=== */
+.pizza-flex button{
+    border-color: transparent;
+}
 
+.contact-order{
+    border: 2px solid red;
+    background: transparent;
+    border-radius: 5px;
+    height: 30px;
+}
 
+.contact-order:hover{
+    background: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px red;
+    height: 30px;
+}
 
+.contact-order-link{
+    color: white;
+    text-decoration: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.contact-order-link:hover{
+    color: black;
+}
 
 
 /* Media  Queries*/
@@ -319,22 +243,13 @@ grid-template-columns: 1fr;
     font-weight: bold;
     font-size: 55px;
   }
-  .favorite-flex{
+  .menu-contain-flex{
     display: flex;
-    gap: 20px;
+    gap: 50px;
+    margin-bottom: 50px;
   }
-  .special-flex-contain{
-    display: flex;
-    margin-top: 50px;
-    gap: 30px;
-  }
-  .special-contain-body{
-    width: 690px;
-  }
-  .special-contain-img{
-    width: 50%;
-  }
-  .flex-chef{
-    display:flex
-  }
+  .menu-container{
+    border: 1px solid white;
+    width: 700px;
+}
 }

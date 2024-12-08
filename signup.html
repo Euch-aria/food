@@ -48,7 +48,7 @@
             </div>
             <button type="submit" class="btn btn-danger w-100">sign up</button>
         </form>
-        <p class="mt-3">already have an account? <a href="login.html" id="signupLink" style="color: lightblue;">log in</a></p>
+        <p class="mt-3">already have an account? <a href="index.html" id="signupLink" style="color: lightblue;">log in</a></p>
     </div>
 
     <script>
@@ -63,7 +63,7 @@
             // Dummy authentication
             if (username && password) {
                 localStorage.setItem("loggedIn", "true");
-                window.location.href = "index.html"; // Redirect to the main page
+                window.location.href = "pizza.html"; // Redirect to the main page
             } else {
                 alert("Please fill in all fields.");
             }
