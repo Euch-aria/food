@@ -29,3 +29,24 @@ window.addEventListener('load', function () {
       preloader.style.display = 'none';
     }, 7000); 
   });
+
+
+  // payment section
+  const btnCard = document.getElementById('btnCard');
+  const btnTransfer = document.getElementById('btnTransfer');
+  const cardSection = document.getElementById('cardPaymentSection');
+  const transferSection = document.getElementById('bankTransferSection');
+
+  btnCard.addEventListener('click', () => {
+    btnCard.classList.add('active');
+    btnTransfer.classList.remove('active');
+    cardSection.classList.remove('d-none');
+    transferSection.classList.add('d-none');
+  });
+
+  btnTransfer.addEventListener('click', () => {
+    btnTransfer.classList.add('active');
+    btnCard.classList.remove('active');
+    transferSection.classList.remove('d-none');
+    cardSection.classList.add('d-none');
+  });

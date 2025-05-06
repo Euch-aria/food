@@ -15,8 +15,22 @@
             background-image: url(images/5854.jpg_wh1200.jpg);
             background-repeat: no-repeat;
             background-size: cover;
+            height: 560px;
             color: white;
         }
+        body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;}
+  .container {
+  animation: fadeIn 1s ease-in;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
         .container {
             margin-top: 100px;
             max-width: 400px;
@@ -28,13 +42,21 @@
         input, button {
             margin-top: 15px;
         }
+        @media (max-width: 480px) {
+  .container {
+    margin: 50px 20px;
+    padding: 20px;
+  }
+}
+
+
     </style>
 </head>
 <body>
     <div class="container text-center">
-        <h1>Welcome to My Resturant</h1>
-        <p>sign up to access the site</p>
-
+        <h1>🍕 Join DaCrust Family 🍕</h1>
+        <p>Sign up now to unlock cheesy deals, secret toppings, and pizza made just for you!</p>
+        
         <!-- Login Form -->
         <form id="signupForm">
             <div class="mb-3">
@@ -50,6 +72,9 @@
         </form>
         <p class="mt-3">already have an account? <a href="index.html" id="signupLink" style="color: lightblue;">log in</a></p>
     </div>
+
+    
+    
 
     <script>
         const loginForm = document.getElementById("signupForm");
@@ -68,6 +93,7 @@
                 alert("Please fill in all fields.");
             }
         });
+        
     </script>
 </body>
 </html>

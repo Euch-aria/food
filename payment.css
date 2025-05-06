@@ -12,7 +12,9 @@ body{
         color: white !important;
         overflow-x: hidden;
         line-height: 1.5 !important;
-        background-image: url(images/slice-of-pizza-falling-into-the-air-on-a-dark-background-photo.jpg) !important;
+        /* background-image: url(images/pepperoni.jpeg) ;
+        height: 100px !important; */
+        
 }
 /* PRELOADER STYLE */
 #preloader {
@@ -35,11 +37,11 @@ body{
     border-radius: 50%;
   }
 
-  .background-img{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
+  /* .background-img{ */
+    /* background-repeat: repeat;
+    background-size: contain;
+    background-position: center; */
+  /* } */
 /* =============== */
 /* header section */
 /* =============== */
@@ -57,10 +59,46 @@ header {
   position: relative;
 }
 
+.payment-container {
+  max-width: 500px;
+  margin: 80px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+.form-title {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.btn-primary {
+  width: 100%;
+  background-color: #e74c3c !important;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #c0392b;
+}
+
+.modal-body{
+  color: black;
+}
+
 #menuIcon {
   font-size: 20px;
   cursor: pointer;
 }
+
+.alert {
+  background-color: #fff8e1;
+  border: 2px solid #ffc107;
+  color: #4a3f00;
+}
+
+.alert-heading i {
+  color: #ff9800;
+}
+
 
 .navbar {
   position: absolute;
@@ -138,77 +176,9 @@ header {
   color: red;
 }
 
-.contact-contain-text{
-    justify-self: center;
-    margin-top: 50px;
-}
 
-.contact-contain-text p{
-    font-size: x-large;
-    margin-left: 4.5%;
-    margin-right: 4.5%;
-}
 
-.contact-contain-text h3{
-    text-align: center;
-}
 
-span{
-    color: red;
-}
-
-.inner-container{
-    margin-top: 30px;
-}
-
-.mothercontact{
-  /*  */
-  text-align: center;
-}
-
-form input{
-  /* position: relative; */
-  color: black;
-  border: 1px solid;
-  border-radius: 20px;
-  margin-bottom: 20px;
-  border-width: 20px;
-  margin-top: 40px;
-  margin-left: 25px;
-  margin-right: 25px;
-  border-color: transparent;
-  background:rgb (45,53,63);
-  box-shadow: 0 0 5px;
-}
-form select {
-  width: 50%;
-}
-
-button{
-  background: black;
-  font-size: larger;
-  border: 2px solid;
-  border-color:red;
-}
-
-button a{
-  color: white;
-  text-decoration: none;
-}
-
-.num{
-  color: white;
-  background: red;
-}
-
-.btn-open{
-  border: transparent;
-  background: red;
-  color: white;
-  margin-left: 10px;
-}
-
-/* Media  Queries*/
 @media (min-width: 768px) {
     .navbar {
       margin: 10px;
@@ -232,67 +202,7 @@ button a{
     .nav-btn {
       margin-left: 10px;
     }
-    form input{
+    /* form input{
       width: 50%;
-    }
-}
-.combo-deals {
-  padding: 40px 20px;
-  background: #fffbea;
-  text-align: center;
-  margin-top: 40px;
-}
-
-.combo-deals h2 {
-  font-size: 2.2rem;
-  color: #d62828;
-  margin-bottom: 20px;
-}
-
-.combo-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.combo-card {
-  background: #ffffff;
-  border: 2px solid #fcbf49;
-  padding: 20px;
-  border-radius: 16px;
-  width: 250px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-
-.combo-card:hover {
-  transform: scale(1.05);
-}
-
-.combo-card h3 {
-  font-size: 1.5rem;
-  color: #003049;
-  margin-bottom: 10px;
-}
-
-.combo-card p {
-  color: #555;
-  font-size: 0.95rem;
-  margin-bottom: 10px;
-}
-
-.combo-card span {
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: #e63946;
-}
-
-
-select#combo-choice {
-
-  padding: 8px;
-  margin: 10px 0;
-  border-radius: 8px;
-  border: 1px solid #ccc;
+    } */
 }

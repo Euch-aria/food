@@ -14,9 +14,16 @@
             background-image: url(images/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L2lzMTYwNjItaW1hZ2Uta3d2eWZrd3IuanBn.webp);
             background-repeat: no-repeat;
             background-size: cover;
-           
+            height: 560px;
             color: white;
         }
+        body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
         .container {
             margin-top: 100px;
             max-width: 400px;
@@ -28,12 +35,28 @@
             background: #7F3E12;
             color: white;
         }
+        .container {
+  animation: fadeIn 1s ease-in;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 480px) {
+  .container {
+    margin: 50px 20px;
+    padding: 20px;
+  }
+}
+
     </style>
 </head>
 <body>
+   
+      
     <div class="container text-center">
-        <h1 style="font-weight: 900; font-size: 50px;">Welcome  back to My Restaurant</h1>
-        <p style="font-weight: 900;">Please log in to access the site</p>
+       <h1 style="font-weight: 900; font-size: 30px;">"🔥 Da Crust Is Waiting — Get Your Slice!" </h1>
+        <p style="font-weight: 900;">✔️ "Pizza points for every bite!"</p>
 
         <!-- Login Form -->
         <form id="loginForm">
@@ -58,7 +81,7 @@
             // Dummy authentication
             if (username && password) {
                 localStorage.setItem("loggedIn", "true");
-                window.location.href = "pizza.html"; // Redirect to the main page
+                window.location.href = "menu.html"; // Redirect to the main page
             } else {
                 alert("Please fill in all fields.");
             }

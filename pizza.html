@@ -1,191 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pizza</title>
-    <!-- =====CSS===== -->
-    <link rel="stylesheet" href="pizza.css">
-    
-     <!-- font-awesome -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" 
-     integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" 
-     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-    <!-- =====BOOTSRAP===== -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <!-- ========GOOGLE FONTS======== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dacrust Pizza</title>
+  <link rel="stylesheet" href="pizza.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap" rel="stylesheet">
 </head>
 <body>
 
-     <!-- ======  PRELOADER ===== -->
- <div id="preloader">
-    <img src="images/pizza-logo-cartoon-this-logo-is-highly-suitable-for-any-pizza-related-restaurant-fast-food-delivery-bistro-catering-and-italian-food-related-businesses-vector.jpg" alt="Loading..." id="preloader-image">
+  <!-- Preloader -->
+  <div id="preloader">
+    <img src="images/pizza-logo-cartoon-this-logo-is-highly-suitable-for-any-pizza-related-restaurant-fast-food-delivery-bistro-catering-and-italian-food-related-businesses-vector.jpg" alt="Loading pizza logo" id="preloader-image">
   </div>
-  
 
-  <div class="background-img">
 
-  <!-- HEADER -->
 
-      <header>
-        <!-- logo -->
-        <div class="brand">Dacrust</div>
-  
-        <!-- navbar -->
-        <nav class="navbar fixed-top" id="navBar">
-          <!-- closeIcon -->
-          <i class="fa-regular fa-circle-xmark" id="closeIcon"></i>
-  
-          <ul class="navbar-list">
-            <li class="navbar-item active">
-              <a href="pizza.html" class="navbar-link" id="home">Home</a>
-            </li>
-  
-            <li class="navbar-item">
-              <a href="menu.html" class="navbar-link" id="about">Menu</a>
-            </li>
-  
-            <li class="navbar-item">
-              <a href="#contact" class="navbar-link" id="contact">Contact</a>
-            </li>
+  <!-- Header -->
+  <header>
+    <div class="brand">Dacrust</div>
+    <nav class="navbar fixed-top" id="navBar">
+      <i class="fa-regular fa-circle-xmark" id="closeIcon"></i>
+      <ul class="navbar-list">
+        <li class="navbar-item active"><a href="pizza.html" class="navbar-link" aria-current="page">Home</a></li>
+        <li class="navbar-item"><a href="menu.html" class="navbar-link">Menu</a></li>
+        <li class="navbar-item"><a href="contact.html" class="navbar-link">Contact</a></li>
+        <li class="navbar-item"><a href="payment.html" class="navbar-link">Payment</a></li>
+        <li class="navbar-item"><a href="other.html" class="navbar-link">Exclusive</a></li>
+      </ul>
+    </nav>
+    <i class="fa-solid fa-bars" id="menuIcon"></i>
+  </header>
 
-            <li class="navbar-item">
-              <a href="about.html" class="navbar-link" id="contact">About</a>
-            </li>
-
-            <li class="navbar-item">
-              <a href="other.html" class="navbar-link" id="Exclusive">Exclusive</a>
-            </li>
-  
-            <!-- <button class="btn nav-btn" id="loginBtn">Login</button> -->
-          </ul>
-        </nav>
-  
-        <!-- menu -->
-        <i class="fa-solid fa-bars" id="menuIcon"></i>
-      </header>
-      <!-- header section end -->
-      
-      <div class="heading-text">
-        <h1>
-          Thin crust pizza
-        </h1>
-        <h1 id="order-pickup-text">
-          OPEN FOR DELIVERY & PICK UP
-        </h1>
-        <h1 id="get-white-hot-text">
-          GET IT WHILE IT'S HOT
-        </h1>
+  <main class="background-img">
+    <!-- Hero Section -->
+    <section class="heading-text text-center">
+      <h1 id="thin">THIN CRUST PIZZA</h1>
+      <h1 id="order-pickup-text">OPEN FOR DELIVERY & PICKUP</h1>
+      <h1 id="get-white-hot-text">GET IT WHILE IT'S HOT</h1>
+      <div class="btn-see-menu mt-3">
+        <!-- <a href="menu.html" class="btn see-menu">See Menu</a> -->
       </div>
-      <div class="btn-see-menu">
-        <button class="see-menu">
-          <a href="menu.html" class="see-menu-link">see menu</a>
-          </button>
-      </div><br>
-  </div>
+    </section>
+  </main>
 
-<div class="contain-main-body-text">
-  <h1 class="recepie-original-text">
-    ORIGINAL RECIPE SINCE THE EARLY 2000'S
-  </h1>
-  
-  <div class="contain-time-favourites">
-  <p id="time-favorite-text">
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-      <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
-    </svg> ALL TIME FAVOURITES 
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-      <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
-    </svg>
-  </p>
+    <!-- Original Recipe Section -->
+    <section class="contain-main-body-text">
+      <h2 class="recepie-original-text text-center">Original Recipe Since the Early 2000's</h2>
 
-  <div class="favorite-flex">
-    <img src="images/deep-dish-pizza-3.webp" class="chicago-deep">
+      <div class="contain-time-favourites">
+        <p id="time-favorite-text" class="text-center">
+          <i class="fa-solid fa-star"></i> ALL TIME FAVOURITES <i class="fa-solid fa-star"></i>
+        </p>
 
-    <span>
-      <h1 class="chicago-deep-text">
-        CHICAGO DEEP DISH
-     </h1>
-     <p style="color: black; flex-wrap: wrap;">
-      A hearty and indulgent creation, Chicago deep-dish pizza is characterized by its thick, buttery crust that lines a deep pan.
-      Layers of mozzarella cheese, meat, and chunky tomato sauce are assembled in a reverse order, with the sauce often generously ladled on top. The result is a pizza with a rich, satisfying combination of flavors and textures.<br><br>
-      <span style="color: red;"> common toppings:<br> </span>
-<li style="color: black;">
-Sausage and Mushroom: Sweet Italian sausage combined with earthy mushrooms, layered over mozzarella and tomato sauce.</li>
+        <div class="favorite-flex">
+          <img src="images/deep-dish-pizza-3.webp" class="chicago-deep" alt="Chicago Deep Dish Pizza">
+          <div>
+            <h3 class="chicago-deep-text">Chicago Deep Dish</h3>
+            <p style="color: black;">
+              A hearty and indulgent creation, Chicago deep-dish pizza features a thick, buttery crust, layered with mozzarella, meats, and chunky tomato sauce. Sauce is traditionally on top.<br><br>
+              <span class="text-danger">Common Toppings:</span>
+              <ul style="color: black;">
+                <li>Sausage and Mushroom: Sweet Italian sausage with earthy mushrooms over mozzarella and tomato sauce.</li>
+                <li>Spinach and Artichoke: Creamy spinach with marinated artichoke hearts on cheese and sauce.</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
 
-<li style="color: black;">
-Spinach and Artichoke: A rich blend of creamy spinach and marinated artichoke hearts atop layers of cheese and sauce.</li>
-     </p>
-    </span>
-  </div>
-  zzz
-  </div>
+      <!-- Special of the Week Section -->
+      <section class="special-flex-contain">
+        <div class="special-contain-body">
+          <h3 class="special-contain-text">
+            <i class="fa-solid fa-star"></i> Special of the Week <i class="fa-solid fa-star"></i>
+          </h3>
+          <p class="text-danger">Detroit Style Pizza</p>
+          <p class="ms-3">
+            It originated in Detroit in the mid-1940s and is known for its crispy, caramelized cheese crust and often features a blend of brick and mozzarella cheese. 
+          Detroit-style pizza is square-shaped with a thick, airy crust <br>
+          It has a delightful contrast of crispy edges and a soft interior.</p>
+          <br>
+          <p class="text-danger">vietnamese pizza</p>
+          <p class="ms-3">
+            vietnamese pizza as the name implies originates from vietnam.Instead of dough, Vietnamese pizza uses thin sheets of rice paper, which are crisped up on a hot pan or grill. Vietnamese pizza is often folded in half before being served, allowing for a more handheld and convenient eating experience
+          </p>
+        </div>
+        <img src="images/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2017__02__20170216-detroit-style-pizza-47-1500x1125-1-233d75e6021048b3bf3cf28bd59d310b.jpg" class="special-contain-img" alt="Detroit Style Pizza">
+      </section>
 
-  <div class="special-flex-contain">
+      <!-- Meet Our Chef Section -->
+      <section class="about-our-chef text-left">
+        <h2 class="display-4" style="text-align: center;">Meet Our Chef</h2>
+        <p id="p-our-chef">The best chef right at your service</p>
 
-    <div class="special-contain-body">
-    <h1 class="special-contain-text">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-        <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
-      </svg>
-      SPECIAL OF THE WEEK
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-        <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
-      </svg>
-    </h1>
-    <p id="guilty">YOUR NEW GUILTY PLEASURE</p>
-    <p style="color: red;">Detroit Style Pizza</p>
-      <p style="margin-left: 25px;">Detroit-style pizza is easily recognizable by its square shape and distinctive thick, airy crust. The crust achieves a delightful combination of <span style="color: red;">crispy edges and a soft interior.</span> </p>
-    </div>
-   
-<img src="images/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2017__02__20170216-detroit-style-pizza-47-1500x1125-1-233d75e6021048b3bf3cf28bd59d310b.jpg" class="special-contain-img">
-  </div>
-  
-  <div class="about-our-chef">
-    <h1 style="text-align: center; font-size: 70px;">
-MEET OUR CHEF
-    </h1>
-    <p id="p-our-chef"> 
-      The best chef right at your service
-    </p>
+        <div class="flex-chef d-flex flex-wrap justify-content-around align-items-left">
+          <div>
+            <p class="fs-4">Executive Chef</p>
+            <h3>Mike Griffin</h3>
+            <blockquote>
+              <p>
+                <span class="text-danger">"</span>Food is maybe the only universal thing that really has the power to bring everyone together. No matter the culture, people gather to eat.<span class="text-danger">"</span>
+              </p>
+            </blockquote>
+            <h4 class="text-danger">About Our Chef</h4>
+            <p>
+              <span class="text-danger">Proactive, ambitious, and creative</span> — Mike is a seasoned chef with a strong background in pizza making. A natural leader skilled in staff development and kitchen management.
+            </p>
+          </div>
+          <img src="images/chefs-hands-tossing-pizza-dough-air_198067-1990.jpg" alt="Chef tossing pizza dough" class="img-fluid rounded">
+        </div>
+      </section>
+      <a href="menu.html" class="floating-deal">🎉 See Today’s Deals</a>
 
-
-    <div class="flex-chef">
-    <div>
-      <p style="font-size: 25px;"> Executive chef</p>
-      <h1>MIKE GRIFFIN</h1>
-      <p><span style="color: red;">"</span>Food is maybe the only universal thing that really has the power to bring everyone together no matter what culture, everywhere around the world,people get together to eat<span style="color: red;">"</span> </p>
-     
-<h1 style="color: red;">
-  About our chef
-</h1>
-<p>
-  <span style="color: red;">proactive,Ambitious and creative</span>, executive chef with a notable career trajectory and achievement 
-  list in the act of pizza making.<br>
-  An excellent communicator leader and problem solver,skilled in managing and developing staff.
-</p>
-
-    </div>
- <img src="images/chefs-hands-tossing-pizza-dough-air_198067-1990.jpg">
-    </div>
-  </div>
-  </div>
-</div>
-
-
-
-    
+    </section>
  
-      <!-- my script -->
-      <script type="module" src="pizza.js"></script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Scripts -->
+  <script type="module" src="pizza.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </body>
 </html>

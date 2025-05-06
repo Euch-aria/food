@@ -5,6 +5,8 @@
     box-sizing: border-box;
   scroll-behavior: smooth;
   outline: none;  
+  overflow-x: hidden;
+  
 }
 body{
     font-family: "Yuji Mai", serif !important;
@@ -34,6 +36,8 @@ body{
     border-radius: 50%;
   }
 
+  
+
   .background-img{
     background-image: url(images/photo-1513104890138-7c749659a591.jpg);
     background-repeat: no-repeat;
@@ -45,15 +49,16 @@ body{
 /* =============== */
 
 header {
+  width: 100%;
+  height: 60px;
   border: 1px solid;
-  padding: 20px;
   background: white;
   color: black;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: space-between !important;
-  position: relative;
+  /* position: relative; */
 }
 
 #menuIcon {
@@ -64,10 +69,10 @@ header {
 .navbar {
   position: absolute;
   top: -500px;
-  left: 0;
+  /* left: 0; */
  background: white;
   width: 100%;
-  height: 300px;
+  /* height: auto; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -151,15 +156,20 @@ header {
 
 .brand{
   color: red;
+  margin-left: 20px !important;
 }
 .heading-text{
   margin-left: 5.5%;
   margin-right: 5.5%;
   margin-top: 30px;
 }
+#thin{
+  margin-top: 50px;
+}
 #order-pickup-text{
   margin-top: 50PX;
-  color: black;
+  text-align: left;
+  color: white;
   font-weight: 900;
   font-size: 45px;
 }
@@ -221,7 +231,7 @@ header {
 }
 .chicago-deep{
   margin-left: 20px;
-  width: 300px;
+  width: 400px;
 }
 .chicago-deep-text{
 color: black;
@@ -253,18 +263,21 @@ color: black;
   width: 100%;
   margin-top: 10px;
 }
-.about-our-chef{
+.about-our-chef {
   margin-top: 30PX;
 }
-#p-our-chef{
- color: red;
- font-size: 30px;
- text-align: center;
-}
+
+#p-our-chef {
+  color: red;
+  font-size: 30px;
+  text-align: center;
+ }
+ 
 .flex-chef{
 display:grid;
 grid-template-columns: 1fr;
 }
+
 
 
 /* ===menu begins=== */
@@ -277,23 +290,28 @@ grid-template-columns: 1fr;
 
 
 
-
-
-
-
-
-
-
+@media(max-width:360px){
+ .special-flex-contain{
+  justify-content: center;
+ }
+}
 
 
 /* Media  Queries*/
 @media (min-width: 768px) {
+  header{
+    position: fixed;
+    top: 0;
+  }
+  #thin{
+    margin-top: 60px;
+  }
   .navbar {
+   
     margin: 10px;
     position: relative;
     top: 0 !important;
     background: transparent;
-    height: inherit !important;
     flex-direction: row;
     justify-content: right !important;
   }
@@ -335,6 +353,24 @@ grid-template-columns: 1fr;
     width: 50%;
   }
   .flex-chef{
-    display:flex
+    display:flex;
+    justify-self: center;
+    gap: 20px;
   }
+  .flex-wrap{
+    font-size: 25px;
+  }
+}
+.floating-deal {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: red;
+  color: white !important;
+  padding: 12px 20px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  font-weight: bold;
+  z-index: 999;
+  text-decoration: none;
 }
